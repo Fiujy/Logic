@@ -1,0 +1,122 @@
+[
+  {
+    "label": "jour",
+    "antonyms": ["nuit"],
+    "synonyms": ["journée", "luminosité"],
+    "difficulty": 1
+  },
+  {
+    "label": "chaud",
+    "antonyms": ["froid"],
+    "synonyms": ["tiède", "brûlant"],
+    "difficulty": 1
+  },
+  {
+    "label": "grand",
+    "antonyms": ["petit"],
+    "synonyms": ["immense", "vaste"],
+    "difficulty": 1
+  },
+  {
+    "label": "rapide",
+    "antonyms": ["lent"],
+    "synonyms": ["vite", "véloce"],
+    "difficulty": 1
+  },
+  {
+    "label": "plein",
+    "antonyms": ["vide"],
+    "synonyms": ["rempli", "complet"],
+    "difficulty": 1
+  },
+  {
+    "label": "ouvert",
+    "antonyms": ["fermé"],
+    "synonyms": ["débloqué", "accessible"],
+    "difficulty": 1
+  },
+  {
+    "label": "haut",
+    "antonyms": ["bas"],
+    "synonyms": ["élevé", "supérieur"],
+    "difficulty": 1
+  },
+  {
+    "label": "clair",
+    "antonyms": ["sombre"],
+    "synonyms": ["lumineux", "brillant"],
+    "difficulty": 1
+  },
+  {
+    "label": "facile",
+    "antonyms": ["difficile"],
+    "synonyms": ["simple", "accessible"],
+    "difficulty": 1
+  },
+  {
+    "label": "heureux",
+    "antonyms": ["malheureux"],
+    "synonyms": ["joyeux", "content"],
+    "difficulty": 1
+  },
+  {
+    "label": "riche",
+    "antonyms": ["pauvre"],
+    "synonyms": ["fortuné", "aisé"],
+    "difficulty": 2
+  },
+  {
+    "label": "commencer",
+    "antonyms": ["terminer"],
+    "synonyms": ["démarrer", "lancer"],
+    "difficulty": 2
+  },
+  {
+    "label": "acheter",
+    "antonyms": ["vendre"],
+    "synonyms": ["acquérir", "payer"],
+    "difficulty": 2
+  },
+  {
+    "label": "monter",
+    "antonyms": ["descendre"],
+    "synonyms": ["grimper", "élever"],
+    "difficulty": 2
+  },
+  {
+    "label": "entrer",
+    "antonyms": ["sortir"],
+    "synonyms": ["pénétrer", "arriver"],
+    "difficulty": 2
+  },
+  {
+    "label": "vrai",
+    "antonyms": ["faux"],
+    "synonyms": ["exact", "réel"],
+    "difficulty": 2
+  },
+  {
+    "label": "aimer",
+    "antonyms": ["détester"],
+    "synonyms": ["adorer", "apprécier"],
+    "difficulty": 2
+  },
+  {
+    "label": "jeune",
+    "antonyms": ["vieux"],
+    "synonyms": ["adolescent", "nouveau"],
+    "difficulty": 2
+  },
+  {
+    "label": "présent",
+    "antonyms": ["absent"],
+    "synonyms": ["là", "ici"],
+    "difficulty": 3
+  },
+  {
+    "label": "accepté",
+    "antonyms": ["refusé"],
+    "synonyms": ["approuvé", "admis"],
+    "difficulty": 3
+  }
+]
