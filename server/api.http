@@ -1,0 +1,22 @@
+### Health
+GET http://localhost:3000/health
+
+###
+
+### Players
+GET http://localhost:3000/players
+
+###
+
+### Words
+GET http://localhost:3000/words
+
+###
+
+### Random word
+GET http://localhost:3000/random-word
+
+###
+
+### Random word (difficulty)
+GET http://localhost:3000/random-word?difficulty=1

@@ -11,5 +11,18 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
 
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: logic
+      POSTGRES_USER: logic
+      POSTGRES_PASSWORD: logic
+    volumes:
+      # Postgres 18+ : monter le répertoire parent (pas …/data seul)
+      - postgres_data:/var/lib/postgresql
+
 volumes:
   node_modules:
+  postgres_data:

@@ -1,0 +1,63 @@
+// Prisma schema — PostgreSQL.
+// Connection string: set `DATABASE_URL` in `.env` (loaded via `prisma.config.ts`).
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Player {
+  id        Int      @id @default(autoincrement())
+  username  String
+  email     String
+  createdAt DateTime @default(now())
+  games     Game[]
+}
+
+model Game {
+  id        Int        @id @default(autoincrement())
+  playerId  Int
+  startedAt DateTime
+  endedAt   DateTime?
+  player    Player     @relation(fields: [playerId], references: [id])
+  score     Score?
+  gameWords GameWord[]
+}
+
+model Score {
+  id     Int  @id @default(autoincrement())
+  value  Int
+  gameId Int  @unique
+  game   Game @relation(fields: [gameId], references: [id])
+}
+
+model Word {
+  id              Int            @id @default(autoincrement())
+  label           String
+  difficulty      Int
+  sourceRelations RelationWord[] @relation("RelationWordSource")
+  targetRelations RelationWord[] @relation("RelationWordTarget")
+  gameWords       GameWord[]
+}
+
+model RelationWord {
+  id           Int    @id @default(autoincrement())
+  wordIdSource Int
+  wordIdTarget Int
+  type         String
+  sourceWord   Word   @relation("RelationWordSource", fields: [wordIdSource], references: [id])
+  targetWord   Word   @relation("RelationWordTarget", fields: [wordIdTarget], references: [id])
+}
+
+model GameWord {
+  gameId Int
+  wordId Int
+  game   Game @relation(fields: [gameId], references: [id])
+  word   Word @relation(fields: [wordId], references: [id])
+
+  @@id([gameId, wordId])
+}
